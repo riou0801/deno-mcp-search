@@ -1,6 +1,6 @@
 # deno-mcp-search
-this is Web Search MCP server, built by deno.
-deno builtin method only(no dependensy)
+this is Web Search MCP server, built by deno.  
+deno builtin method only(no dependency on any npm/jsr package).  
 this include small client for testing, but not test with llm.
 
 vibe coding with GPT-5
@@ -35,9 +35,8 @@ It uses DuckDuckGo to fetch search results and can be called directly from an MC
 ### Directory Structure
 
 ```
-├── main.ts      # MCP server entry point
-├── deps.ts      # External dependencies (optional)
-├── mcp.json     # Example MCP client configuration
+├── server.ts    # MCP server entry point
+├── client.ts    # External dependencies (optional)
 └── README.md    # Project documentation
 ```
 
@@ -50,7 +49,7 @@ It uses DuckDuckGo to fetch search results and can be called directly from an MC
   "servers": [
     {
       "name": "web-search-mcp",
-      "command": "deno run -A main.ts",
+      "command": "deno run -A /path/to/clone/server.ts",
       "transport": "stdio",
       "description": "Simple MCP server for web searches via DuckDuckGo",
       "tools": ["search"]
@@ -66,7 +65,7 @@ It uses DuckDuckGo to fetch search results and can be called directly from an MC
   "servers": [
     {
       "name": "web-search-mcp",
-      "command": "deno run -A main.ts",
+      "command": "deno run -A /path/to/clone/server.ts",
       "transport": "stdio",
       "tools": {
         "search": {

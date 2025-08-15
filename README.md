@@ -1,6 +1,6 @@
 # deno-mcp-search
 this is Web Search MCP server, built by deno.  
-deno builtin method only(no dependency on any npm/jsr package).  
+~~deno builtin method only(no dependency on any npm/jsr package).~~  
 this include small client for testing, but not test with llm.
 
 vibe coding with GPT-5
